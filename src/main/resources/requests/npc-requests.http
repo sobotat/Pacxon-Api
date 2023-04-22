@@ -1,0 +1,53 @@
+###
+POST http://localhost:8080/npc/create
+Content-Type: application/json
+
+{
+  "positionX": 4,
+  "positionY": 7,
+  "direction": "UP_RIGHT",
+  "spawnDelay": 10,
+  "type": "c"
+}
+
+###
+POST http://localhost:8080/npc/createAll
+Content-Type: application/json
+
+[
+  {
+  "positionX": 4,
+  "positionY": 7,
+  "direction": "UP_RIGHT",
+  "spawnDelay": 10,
+  "type": "c"
+  },
+  {
+  "positionX": 7,
+  "positionY": 3,
+  "direction": "DOWN_RIGHT",
+  "bonusSpeed": 2,
+  "type": "m"
+  },
+  {
+    "positionX": 13,
+    "positionY": 5,
+    "direction": "UP_LEFT",
+    "type": "r"
+  },
+  {
+    "positionX": 18,
+    "positionY": 18,
+    "direction": "UP",
+    "type": "y"
+  }
+]
+
+###
+GET localhost:8080/npc/getAll
+
+###
+POST localhost:8080/npc/get
+Content-Type: text/plain
+
+1

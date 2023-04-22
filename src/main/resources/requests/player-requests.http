@@ -1,0 +1,18 @@
+###
+POST http://localhost:8080/player/create
+Content-Type: application/json
+
+{
+  "positionX": 0,
+  "positionY": 0,
+  "speed": 6
+}
+
+###
+GET localhost:8080/player/getAll
+
+###
+POST localhost:8080/player/get
+Content-Type: text/plain
+
+1

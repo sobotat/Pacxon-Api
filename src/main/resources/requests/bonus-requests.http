@@ -1,0 +1,41 @@
+###
+POST http://localhost:8080/bonus/create
+Content-Type: application/json
+
+{
+  "time": 15,
+  "spawnDelay": 20,
+  "type": "speed-b"
+}
+
+###
+POST http://localhost:8080/bonus/createAll
+Content-Type: application/json
+
+[{
+  "time": 15,
+  "spawnDelay": 20,
+  "type": "speed-b"
+}, {
+  "time": 10,
+  "spawnDelay": 10,
+  "type": "slow-b"
+}, {
+  "time": 15,
+  "spawnDelay": 25,
+  "type": "kill-b"
+}, {
+  "time": 15,
+  "spawnDelay": 20,
+  "type": "speed-b"
+}
+]
+
+###
+GET localhost:8080/bonus/getAll
+
+###
+POST localhost:8080/bonus/get
+Content-Type: text/plain
+
+1

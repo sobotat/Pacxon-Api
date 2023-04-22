@@ -1,0 +1,55 @@
+###
+POST http://localhost:8080/map-bonus/create
+Content-Type: application/json
+
+{
+  "positionX": 15,
+  "positionY": 8,
+  "bonus": {
+    "id": 4
+  }
+}
+
+###
+POST http://localhost:8080/map-bonus/createAll
+Content-Type: application/json
+
+[
+  {
+    "positionX": 6,
+    "positionY": 13,
+    "bonus": {
+      "id": 1
+    }
+  },
+  {
+    "positionX": 15,
+    "positionY": 12,
+    "bonus": {
+      "id": 2
+    }
+  },
+  {
+    "positionX": 3,
+    "positionY": 17,
+    "bonus": {
+      "id": 3
+    }
+  },
+  {
+    "positionX": 15,
+    "positionY": 8,
+    "bonus": {
+      "id": 4
+    }
+  }
+]
+
+###
+GET localhost:8080/map-bonus/getAll
+
+###
+POST localhost:8080/map-bonus/get
+Content-Type: text/plain
+
+1

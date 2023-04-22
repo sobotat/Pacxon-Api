@@ -1,0 +1,17 @@
+###
+POST http://localhost:8080/map/create
+Content-Type: application/json
+
+{
+  "mapX": 25,
+  "mapY": 20
+}
+
+###
+GET localhost:8080/map/getAll
+
+###
+POST localhost:8080/map/get
+Content-Type: text/plain
+
+1
