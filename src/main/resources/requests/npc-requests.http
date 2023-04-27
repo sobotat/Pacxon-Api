@@ -7,6 +7,7 @@ Content-Type: application/json
   "positionY": 7,
   "direction": "UP_RIGHT",
   "spawnDelay": 10,
+  "bonusSpeed": 0,
   "type": "c"
 }
 
@@ -16,18 +17,18 @@ Content-Type: application/json
 
 [
   {
-  "positionX": 4,
-  "positionY": 7,
-  "direction": "UP_RIGHT",
-  "spawnDelay": 10,
-  "type": "c"
+    "positionX": 4,
+    "positionY": 7,
+    "direction": "UP_RIGHT",
+    "spawnDelay": 10,
+    "type": "c"
   },
   {
-  "positionX": 7,
-  "positionY": 3,
-  "direction": "DOWN_RIGHT",
-  "bonusSpeed": 2,
-  "type": "m"
+    "positionX": 7,
+    "positionY": 3,
+    "direction": "DOWN_RIGHT",
+    "bonusSpeed": 2,
+    "type": "m"
   },
   {
     "positionX": 13,

@@ -8,7 +8,6 @@
     <Loggers>
         <Root level="trace">
             <AppenderRef ref="Console" level="trace"/>
-            <AppenderRef ref="LogFile" level="info"/>
         </Root>
     </Loggers>
 </Configuration>

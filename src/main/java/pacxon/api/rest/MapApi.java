@@ -34,7 +34,7 @@ public class MapApi {
     }
 
     @POST
-    @Path("get")
+    @Path("/get")
     @Transactional
     @Consumes(MediaType.TEXT_PLAIN)
     @Produces(MediaType.APPLICATION_JSON)

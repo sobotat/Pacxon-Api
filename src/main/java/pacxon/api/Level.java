@@ -1,9 +1,6 @@
 package pacxon.api;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -13,6 +10,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Level {
 
     @Id
@@ -25,7 +23,7 @@ public class Level {
     Player player;
 
     @ManyToMany
-    List<NPC> NPCs;
+    List<NPC> npcs;
 
     @ManyToMany
     List<MapBonus> bonuses;

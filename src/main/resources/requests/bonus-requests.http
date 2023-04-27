@@ -13,9 +13,9 @@ POST http://localhost:8080/bonus/createAll
 Content-Type: application/json
 
 [{
-  "time": 15,
-  "spawnDelay": 20,
-  "type": "speed-b"
+  "time": 5,
+  "spawnDelay": 15,
+  "type": "stop-b"
 }, {
   "time": 10,
   "spawnDelay": 10,

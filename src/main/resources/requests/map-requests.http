@@ -3,8 +3,8 @@ POST http://localhost:8080/map/create
 Content-Type: application/json
 
 {
-  "mapX": 25,
-  "mapY": 20
+  "sizeX": 25,
+  "sizeY": 20
 }
 
 ###

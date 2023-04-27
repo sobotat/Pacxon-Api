@@ -1,9 +1,6 @@
 package pacxon.api;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,6 +12,7 @@ import javax.persistence.Id;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class NPC {
 
     @Id
@@ -25,5 +23,6 @@ public class NPC {
     private int positionY;
     private String direction;
     private int spawnDelay;
+    private int bonusSpeed;
     private String type;
 }

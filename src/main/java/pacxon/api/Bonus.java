@@ -1,9 +1,6 @@
 package pacxon.api;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,6 +12,7 @@ import javax.persistence.Id;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Bonus {
 
     @Id
@@ -23,5 +21,6 @@ public class Bonus {
 
     private int time;
     private int spawnDelay;
+    private int speed;
     private String type;
 }
